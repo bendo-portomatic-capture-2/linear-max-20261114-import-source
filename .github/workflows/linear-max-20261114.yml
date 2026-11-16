@@ -1,0 +1,10 @@
+name: linear-max-20261114-proof
+on: [push, workflow_dispatch]
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linear-max-20261114-check
+        run: |
+          echo "linear-max-20261114-owned-check"
+          echo "# linear-max-20261114 proof" >> "$GITHUB_STEP_SUMMARY"
